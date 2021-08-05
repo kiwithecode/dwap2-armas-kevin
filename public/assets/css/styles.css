@@ -250,24 +250,1008 @@ footer {
 /*responsive*/
 
 @media(max-width:575px){
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  div {
+    display: block;
+  }
+  /*CABECERA*/
+  .body {
+    max-width: 1800px;
+  }
+  /*estilo Fondo*/
+  .header {
+    background: url(/imagenes/2.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+  }
+  /*estilo banner*/
+  .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #FDF0D5;
+  }
+  .banner h1 {
+    font-family: fantasy;
+    font-size: 100px;
+    color: #FDF0D5;
+  }
+  .banner h2,
+  h3 {
+    font-family:fantasy;
+  }
+  /*Estilo boton*/
+  button {
+    background: none;
+    padding: 20px 50px;
+    color: #FDF0D5;
+    font-family: Arial;
+    border-radius: 20px;
+    font-size: 1em;
+  
+    transition: transform 0.5s, box-shadow 0.25s, border-color 0.25s;
+  }
+  button:hover {
+    color: #E5383B;
+    background: #000000;
+    border-radius: 20px;
+    border-color: #E5383B;
+    cursor: pointer;
+    box-shadow: 0 0.5em 0.5em 1px #E5383B;
+    transform: translateY(-0.5em);
+  }
+  /*division*/
+  .division {
+    height: 20px;
+    background: linear-gradient(
+      to left,
+      #BA181B,
+      #000000,
+      #BA181B,
+      #0B090A,
+      #BA181B
+    );
+  }
+  /*contenido*/
+  /*Descripcion*/
+  .descripcion {
+    width: 100%;
+    min-height: 400px;
+    background: #BA181B;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+  section button {
+    color: #ffffff;
+    font-size: 15px;
+  }
+  section button img {
+    height: 20px;
+    text-align: justify;
+  }
+  section {
+    width: 60%;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    font-family: fantasy;
+  }
+  section h1 {
+    font-family: fantasy;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+  }
+  section h2 {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  section p {
+    font-size: 20px;
+    color: #161A1D;
+  }
+  aside {
+    width: 40%;
+    height: 100%;
+    padding: 60px 10px 40px 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  aside img {
+    width: 100%;
+    border: 5px solid #161A1D;
+    border-radius: 10px;
+    margin-top: 100px;
+    transition: transform 0.5s;
+  }
+  aside img:hover {
+    opacity: 80%;
+    transform: scale(1.05);
+  }
+  @media screen and (max-width: 1000px) {
+    .descripcion {
+      flex-direction: column;
+  
+  width: 100%;
+  
+    }
+    section {
+      width: 100%;
+    }
+    aside {
+      width: 100%;
+    }
+    aside img {
+      width: 80%;
+    }
+  }
+  /*PRODUCTOS*/
+  .productos {
+    min-height: 400px;
+    width: 100%;
+    background: #161A1D;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .produc {
+    width: 20%;
+    margin: auto;
+    font-family: fantasy;
+  }
+  .produc h1 {
+    font-family: fantasy;
+    font-size: 50px;
+    color: #BA181B;
+    text-align: center;
+  }
+  .produc h2,
+  p {
+    color: #f2f2f2;
+    text-align: justify;
+  }
+  .produc h4,
+  figcaption {
+    color: #BA181B;
+    text-align: center;
+    font-size: 20px;
+  }
+  .produc button {
+    color: blanchedalmond;
+    border-color: #0d0007;
+  }
+  .produc button:hover {
+    box-shadow: 0 0.5em 0.5em 1px #4b3331;
+    background: #BA181B;
+    transform: translateY(-0.5em);
+  }
+  .produc img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .produc img:hover {
+    border: 1px solid #BA181B;
+    box-shadow: 0 0.5em 0.5em 1px #f2f2f2;
+    transform: scale(1.15);
+  }
+  @media screen and (max-width: 800px) {
+    .productos {
+      flex-direction: column;
+    }
+    .produc {
+      width: 60%;
+    }
+    .produc img {
+      width: 80%;
+    }
+  }
+  /*Contactos*/
+  .contactos {
+    min-height: 200px;
+    background: #fbf8ff;
+    text-align: center;
+    padding: 10px;
+  }
+  .contactos section {
+    width: 60%;
+    margin: auto;
+  }
+  .contactos li {
+    display: block;
+    color: #BA181B;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 30px;
+    font-family: fantasy;
+  }
+  .contactos li h3 {
+    font-size: 10px;
+    color: #161A1D;
+  }
+  .contactos li img {
+    width: 30px;
+  }
+  /*Pie de pagina*/
+  footer {
+    height: 120px;
+    background-color: #A4161A;
+    color: #161A1D;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 50px;
+  }
     
       
 
 }
 
-@media(min-width:575px) and (max-width: 767px) {
+@media(min-width:475px) and (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  div {
+    display: block;
+  }
+  /*CABECERA*/
+  .body {
+    max-width: 1800px;
+  }
+  /*estilo Fondo*/
+  .header {
+    background: url(/imagenes/2.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+  }
+  /*estilo banner*/
+  .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #FDF0D5;
+  }
+  .banner h1 {
+    font-family: fantasy;
+    font-size: 100px;
+    color: #FDF0D5;
+  }
+  .banner h2,
+  h3 {
+    font-family:fantasy;
+  }
+  /*Estilo boton*/
+  button {
+    background: none;
+    padding: 20px 50px;
+    color: #FDF0D5;
+    font-family: Arial;
+    border-radius: 20px;
+    font-size: 1em;
+  
+    transition: transform 0.5s, box-shadow 0.25s, border-color 0.25s;
+  }
+  button:hover {
+    color: #E5383B;
+    background: #000000;
+    border-radius: 20px;
+    border-color: #E5383B;
+    cursor: pointer;
+    box-shadow: 0 0.5em 0.5em 1px #E5383B;
+    transform: translateY(-0.5em);
+  }
+  /*division*/
+  .division {
+    height: 20px;
+    background: linear-gradient(
+      to left,
+      #BA181B,
+      #000000,
+      #BA181B,
+      #0B090A,
+      #BA181B
+    );
+  }
+  /*contenido*/
+  /*Descripcion*/
+  .descripcion {
+    width: 100%;
+    min-height: 400px;
+    background: #BA181B;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+  section button {
+    color: #ffffff;
+    font-size: 15px;
+  }
+  section button img {
+    height: 20px;
+    text-align: justify;
+  }
+  section {
+    width: 60%;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    font-family: fantasy;
+  }
+  section h1 {
+    font-family: fantasy;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+  }
+  section h2 {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  section p {
+    font-size: 20px;
+    color: #161A1D;
+  }
+  aside {
+    width: 40%;
+    height: 100%;
+    padding: 60px 10px 40px 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  aside img {
+    width: 100%;
+    border: 5px solid #161A1D;
+    border-radius: 10px;
+    margin-top: 100px;
+    transition: transform 0.5s;
+  }
+  aside img:hover {
+    opacity: 80%;
+    transform: scale(1.05);
+  }
+  @media screen and (max-width: 1000px) {
+    .descripcion {
+      flex-direction: column;
+  
+  width: 100%;
+  
+    }
+    section {
+      width: 100%;
+    }
+    aside {
+      width: 100%;
+    }
+    aside img {
+      width: 80%;
+    }
+  }
+  /*PRODUCTOS*/
+  .productos {
+    min-height: 400px;
+    width: 100%;
+    background: #161A1D;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .produc {
+    width: 20%;
+    margin: auto;
+    font-family: fantasy;
+  }
+  .produc h1 {
+    font-family: fantasy;
+    font-size: 50px;
+    color: #BA181B;
+    text-align: center;
+  }
+  .produc h2,
+  p {
+    color: #f2f2f2;
+    text-align: justify;
+  }
+  .produc h4,
+  figcaption {
+    color: #BA181B;
+    text-align: center;
+    font-size: 20px;
+  }
+  .produc button {
+    color: blanchedalmond;
+    border-color: #0d0007;
+  }
+  .produc button:hover {
+    box-shadow: 0 0.5em 0.5em 1px #4b3331;
+    background: #BA181B;
+    transform: translateY(-0.5em);
+  }
+  .produc img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .produc img:hover {
+    border: 1px solid #BA181B;
+    box-shadow: 0 0.5em 0.5em 1px #f2f2f2;
+    transform: scale(1.15);
+  }
+  @media screen and (max-width: 800px) {
+    .productos {
+      flex-direction: column;
+    }
+    .produc {
+      width: 60%;
+    }
+    .produc img {
+      width: 80%;
+    }
+  }
+  /*Contactos*/
+  .contactos {
+    min-height: 200px;
+    background: #fbf8ff;
+    text-align: center;
+    padding: 10px;
+  }
+  .contactos section {
+    width: 60%;
+    margin: auto;
+  }
+  .contactos li {
+    display: block;
+    color: #BA181B;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 30px;
+    font-family: fantasy;
+  }
+  .contactos li h3 {
+    font-size: 10px;
+    color: #161A1D;
+  }
+  .contactos li img {
+    width: 30px;
+  }
+  /*Pie de pagina*/
+  footer {
+    height: 120px;
+    background-color: #A4161A;
+    color: #161A1D;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 50px;
+  }
     
       
     
 }
 
 @media(min-width:768px) and (max-width: 991px){
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  div {
+    display: block;
+  }
+  /*CABECERA*/
+  .body {
+    max-width: 1800px;
+  }
+  /*estilo Fondo*/
+  .header {
+    background: url(/imagenes/2.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+  }
+  /*estilo banner*/
+  .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #FDF0D5;
+  }
+  .banner h1 {
+    font-family: fantasy;
+    font-size: 100px;
+    color: #FDF0D5;
+  }
+  .banner h2,
+  h3 {
+    font-family:fantasy;
+  }
+  /*Estilo boton*/
+  button {
+    background: none;
+    padding: 20px 50px;
+    color: #FDF0D5;
+    font-family: Arial;
+    border-radius: 20px;
+    font-size: 1em;
+  
+    transition: transform 0.5s, box-shadow 0.25s, border-color 0.25s;
+  }
+  button:hover {
+    color: #E5383B;
+    background: #000000;
+    border-radius: 20px;
+    border-color: #E5383B;
+    cursor: pointer;
+    box-shadow: 0 0.5em 0.5em 1px #E5383B;
+    transform: translateY(-0.5em);
+  }
+  /*division*/
+  .division {
+    height: 20px;
+    background: linear-gradient(
+      to left,
+      #BA181B,
+      #000000,
+      #BA181B,
+      #0B090A,
+      #BA181B
+    );
+  }
+  /*contenido*/
+  /*Descripcion*/
+  .descripcion {
+    width: 100%;
+    min-height: 400px;
+    background: #BA181B;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+  section button {
+    color: #ffffff;
+    font-size: 15px;
+  }
+  section button img {
+    height: 20px;
+    text-align: justify;
+  }
+  section {
+    width: 60%;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    font-family: fantasy;
+  }
+  section h1 {
+    font-family: fantasy;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+  }
+  section h2 {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  section p {
+    font-size: 20px;
+    color: #161A1D;
+  }
+  aside {
+    width: 40%;
+    height: 100%;
+    padding: 60px 10px 40px 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  aside img {
+    width: 100%;
+    border: 5px solid #161A1D;
+    border-radius: 10px;
+    margin-top: 100px;
+    transition: transform 0.5s;
+  }
+  aside img:hover {
+    opacity: 80%;
+    transform: scale(1.05);
+  }
+  @media screen and (max-width: 1000px) {
+    .descripcion {
+      flex-direction: column;
+  
+  width: 100%;
+  
+    }
+    section {
+      width: 100%;
+    }
+    aside {
+      width: 100%;
+    }
+    aside img {
+      width: 80%;
+    }
+  }
+  /*PRODUCTOS*/
+  .productos {
+    min-height: 400px;
+    width: 100%;
+    background: #161A1D;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .produc {
+    width: 20%;
+    margin: auto;
+    font-family: fantasy;
+  }
+  .produc h1 {
+    font-family: fantasy;
+    font-size: 50px;
+    color: #BA181B;
+    text-align: center;
+  }
+  .produc h2,
+  p {
+    color: #f2f2f2;
+    text-align: justify;
+  }
+  .produc h4,
+  figcaption {
+    color: #BA181B;
+    text-align: center;
+    font-size: 20px;
+  }
+  .produc button {
+    color: blanchedalmond;
+    border-color: #0d0007;
+  }
+  .produc button:hover {
+    box-shadow: 0 0.5em 0.5em 1px #4b3331;
+    background: #BA181B;
+    transform: translateY(-0.5em);
+  }
+  .produc img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .produc img:hover {
+    border: 1px solid #BA181B;
+    box-shadow: 0 0.5em 0.5em 1px #f2f2f2;
+    transform: scale(1.15);
+  }
+  @media screen and (max-width: 800px) {
+    .productos {
+      flex-direction: column;
+    }
+    .produc {
+      width: 60%;
+    }
+    .produc img {
+      width: 80%;
+    }
+  }
+  /*Contactos*/
+  .contactos {
+    min-height: 200px;
+    background: #fbf8ff;
+    text-align: center;
+    padding: 10px;
+  }
+  .contactos section {
+    width: 60%;
+    margin: auto;
+  }
+  .contactos li {
+    display: block;
+    color: #BA181B;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 30px;
+    font-family: fantasy;
+  }
+  .contactos li h3 {
+    font-size: 10px;
+    color: #161A1D;
+  }
+  .contactos li img {
+    width: 30px;
+  }
+  /*Pie de pagina*/
+  footer {
+    height: 120px;
+    background-color: #A4161A;
+    color: #161A1D;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 50px;
+  }
    
       
       
     
 }
 @media(min-width: 1200px){
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  div {
+    display: block;
+  }
+  /*CABECERA*/
+  .body {
+    max-width: 1800px;
+  }
+  /*estilo Fondo*/
+  .header {
+    background: url(/imagenes/2.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+  }
+  /*estilo banner*/
+  .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #FDF0D5;
+  }
+  .banner h1 {
+    font-family: fantasy;
+    font-size: 100px;
+    color: #FDF0D5;
+  }
+  .banner h2,
+  h3 {
+    font-family:fantasy;
+  }
+  /*Estilo boton*/
+  button {
+    background: none;
+    padding: 20px 50px;
+    color: #FDF0D5;
+    font-family: Arial;
+    border-radius: 20px;
+    font-size: 1em;
+  
+    transition: transform 0.5s, box-shadow 0.25s, border-color 0.25s;
+  }
+  button:hover {
+    color: #E5383B;
+    background: #000000;
+    border-radius: 20px;
+    border-color: #E5383B;
+    cursor: pointer;
+    box-shadow: 0 0.5em 0.5em 1px #E5383B;
+    transform: translateY(-0.5em);
+  }
+  /*division*/
+  .division {
+    height: 20px;
+    background: linear-gradient(
+      to left,
+      #BA181B,
+      #000000,
+      #BA181B,
+      #0B090A,
+      #BA181B
+    );
+  }
+  /*contenido*/
+  /*Descripcion*/
+  .descripcion {
+    width: 100%;
+    min-height: 400px;
+    background: #BA181B;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+  section button {
+    color: #ffffff;
+    font-size: 15px;
+  }
+  section button img {
+    height: 20px;
+    text-align: justify;
+  }
+  section {
+    width: 60%;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    font-family: fantasy;
+  }
+  section h1 {
+    font-family: fantasy;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+  }
+  section h2 {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  section p {
+    font-size: 20px;
+    color: #161A1D;
+  }
+  aside {
+    width: 40%;
+    height: 100%;
+    padding: 60px 10px 40px 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  aside img {
+    width: 100%;
+    border: 5px solid #161A1D;
+    border-radius: 10px;
+    margin-top: 100px;
+    transition: transform 0.5s;
+  }
+  aside img:hover {
+    opacity: 80%;
+    transform: scale(1.05);
+  }
+  @media screen and (max-width: 1000px) {
+    .descripcion {
+      flex-direction: column;
+  
+  width: 100%;
+  
+    }
+    section {
+      width: 100%;
+    }
+    aside {
+      width: 100%;
+    }
+    aside img {
+      width: 80%;
+    }
+  }
+  /*PRODUCTOS*/
+  .productos {
+    min-height: 400px;
+    width: 100%;
+    background: #161A1D;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .produc {
+    width: 20%;
+    margin: auto;
+    font-family: fantasy;
+  }
+  .produc h1 {
+    font-family: fantasy;
+    font-size: 50px;
+    color: #BA181B;
+    text-align: center;
+  }
+  .produc h2,
+  p {
+    color: #f2f2f2;
+    text-align: justify;
+  }
+  .produc h4,
+  figcaption {
+    color: #BA181B;
+    text-align: center;
+    font-size: 20px;
+  }
+  .produc button {
+    color: blanchedalmond;
+    border-color: #0d0007;
+  }
+  .produc button:hover {
+    box-shadow: 0 0.5em 0.5em 1px #4b3331;
+    background: #BA181B;
+    transform: translateY(-0.5em);
+  }
+  .produc img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .produc img:hover {
+    border: 1px solid #BA181B;
+    box-shadow: 0 0.5em 0.5em 1px #f2f2f2;
+    transform: scale(1.15);
+  }
+  @media screen and (max-width: 800px) {
+    .productos {
+      flex-direction: column;
+    }
+    .produc {
+      width: 60%;
+    }
+    .produc img {
+      width: 80%;
+    }
+  }
+  /*Contactos*/
+  .contactos {
+    min-height: 200px;
+    background: #fbf8ff;
+    text-align: center;
+    padding: 10px;
+  }
+  .contactos section {
+    width: 60%;
+    margin: auto;
+  }
+  .contactos li {
+    display: block;
+    color: #BA181B;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 30px;
+    font-family: fantasy;
+  }
+  .contactos li h3 {
+    font-size: 10px;
+    color: #161A1D;
+  }
+  .contactos li img {
+    width: 30px;
+  }
+  /*Pie de pagina*/
+  footer {
+    height: 120px;
+    background-color: #A4161A;
+    color: #161A1D;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 50px;
+  }
 
    
       
@@ -276,5 +1260,250 @@ footer {
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
-    
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  div {
+    display: block;
+  }
+  /*CABECERA*/
+  .body {
+    max-width: 1800px;
+  }
+  /*estilo Fondo*/
+  .header {
+    background: url(/imagenes/2.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+  }
+  /*estilo banner*/
+  .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #FDF0D5;
+  }
+  .banner h1 {
+    font-family: fantasy;
+    font-size: 100px;
+    color: #FDF0D5;
+  }
+  .banner h2,
+  h3 {
+    font-family:fantasy;
+  }
+  /*Estilo boton*/
+  button {
+    background: none;
+    padding: 20px 50px;
+    color: #FDF0D5;
+    font-family: Arial;
+    border-radius: 20px;
+    font-size: 1em;
+  
+    transition: transform 0.5s, box-shadow 0.25s, border-color 0.25s;
+  }
+  button:hover {
+    color: #E5383B;
+    background: #000000;
+    border-radius: 20px;
+    border-color: #E5383B;
+    cursor: pointer;
+    box-shadow: 0 0.5em 0.5em 1px #E5383B;
+    transform: translateY(-0.5em);
+  }
+  /*division*/
+  .division {
+    height: 20px;
+    background: linear-gradient(
+      to left,
+      #BA181B,
+      #000000,
+      #BA181B,
+      #0B090A,
+      #BA181B
+    );
+  }
+  /*contenido*/
+  /*Descripcion*/
+  .descripcion {
+    width: 100%;
+    min-height: 400px;
+    background: #BA181B;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+  section button {
+    color: #ffffff;
+    font-size: 15px;
+  }
+  section button img {
+    height: 20px;
+    text-align: justify;
+  }
+  section {
+    width: 60%;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    font-family: fantasy;
+  }
+  section h1 {
+    font-family: fantasy;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+  }
+  section h2 {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  section p {
+    font-size: 20px;
+    color: #161A1D;
+  }
+  aside {
+    width: 40%;
+    height: 100%;
+    padding: 60px 10px 40px 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  aside img {
+    width: 100%;
+    border: 5px solid #161A1D;
+    border-radius: 10px;
+    margin-top: 100px;
+    transition: transform 0.5s;
+  }
+  aside img:hover {
+    opacity: 80%;
+    transform: scale(1.05);
+  }
+  @media screen and (max-width: 1000px) {
+    .descripcion {
+      flex-direction: column;
+  
+  width: 100%;
+  
+    }
+    section {
+      width: 100%;
+    }
+    aside {
+      width: 100%;
+    }
+    aside img {
+      width: 80%;
+    }
+  }
+  /*PRODUCTOS*/
+  .productos {
+    min-height: 400px;
+    width: 100%;
+    background: #161A1D;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .produc {
+    width: 20%;
+    margin: auto;
+    font-family: fantasy;
+  }
+  .produc h1 {
+    font-family: fantasy;
+    font-size: 50px;
+    color: #BA181B;
+    text-align: center;
+  }
+  .produc h2,
+  p {
+    color: #f2f2f2;
+    text-align: justify;
+  }
+  .produc h4,
+  figcaption {
+    color: #BA181B;
+    text-align: center;
+    font-size: 20px;
+  }
+  .produc button {
+    color: blanchedalmond;
+    border-color: #0d0007;
+  }
+  .produc button:hover {
+    box-shadow: 0 0.5em 0.5em 1px #4b3331;
+    background: #BA181B;
+    transform: translateY(-0.5em);
+  }
+  .produc img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .produc img:hover {
+    border: 1px solid #BA181B;
+    box-shadow: 0 0.5em 0.5em 1px #f2f2f2;
+    transform: scale(1.15);
+  }
+  @media screen and (max-width: 800px) {
+    .productos {
+      flex-direction: column;
+    }
+    .produc {
+      width: 60%;
+    }
+    .produc img {
+      width: 80%;
+    }
+  }
+  /*Contactos*/
+  .contactos {
+    min-height: 200px;
+    background: #fbf8ff;
+    text-align: center;
+    padding: 10px;
+  }
+  .contactos section {
+    width: 60%;
+    margin: auto;
+  }
+  .contactos li {
+    display: block;
+    color: #BA181B;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 30px;
+    font-family: fantasy;
+  }
+  .contactos li h3 {
+    font-size: 10px;
+    color: #161A1D;
+  }
+  .contactos li img {
+    width: 30px;
+  }
+  /*Pie de pagina*/
+  footer {
+    height: 120px;
+    background-color: #A4161A;
+    color: #161A1D;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 50px;
+  }
 }
