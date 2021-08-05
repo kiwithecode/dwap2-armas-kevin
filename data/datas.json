@@ -1,0 +1,19 @@
+[
+    {
+        "img": "/imagenes/4.png",
+        "p": "$25",
+        "nombre": "zbrus"
+    }
+    ,
+    {
+        "img": "/imagenes/5.jpg",
+        "p": "$25",
+        "nombre": "xxxx"
+    }
+    ,
+    {
+        "img": "/imagenes/6.jpg",
+        "p": "$25",
+        "nombre": "xxxx"
+    }
+]
